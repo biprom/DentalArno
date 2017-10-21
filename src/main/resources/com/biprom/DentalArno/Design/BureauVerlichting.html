@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="7.7.7">
+ </head>
+ <body>
+  <vaadin-vertical-layout size-full>
+   <vaadin-grid-layout size-full :center>
+    <row expand="1">
+     <column expand="1">
+      <vaadin-button style-name="primary" size-full plain-text _id="buttonBureau1" :center>
+        Bureau 1 
+      </vaadin-button>
+     </column>
+     <column expand="1">
+      <vaadin-button style-name="primary" size-full plain-text _id="buttonBureau2" :center>
+        Bureau 2 
+      </vaadin-button>
+     </column>
+     <column expand="1">
+      <vaadin-button style-name="primary" size-full plain-text _id="buttonBureauLed" :center>
+        Bureau LED 
+      </vaadin-button>
+     </column>
+    </row>
+   </vaadin-grid-layout>
+   <vaadin-browser-frame source="http://mail.vernafix.be:8103/control/userimage.html" size-full :bottom :center></vaadin-browser-frame>
+  </vaadin-vertical-layout>
+ </body>
+</html>
