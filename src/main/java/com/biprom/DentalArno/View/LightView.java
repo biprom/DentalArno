@@ -40,8 +40,5 @@ public class LightView extends LightDesign implements View {
     @Override
     public void enter(ViewChangeListener.ViewChangeEvent viewChangeEvent) {
 
-
-
-
     }
 }
