@@ -11,12 +11,12 @@ import org.springframework.stereotype.Component;
 @Component("mainView")
 
 
-public class MainView extends MainDesign {
+public class MainView extends MainDesign implements View {
 
     public static final String VIEW_NAME = "";
 
-    public MainView() {
-
+    @Override
+    public void enter(ViewChangeListener.ViewChangeEvent viewChangeEvent) {
 
 
         //browserFrameCamera.setSource(new ExternalResource("http://mail.vernafix.be:8103/control/userimage.html"));
@@ -34,8 +34,6 @@ public class MainView extends MainDesign {
         bVideofoon.addClickListener(e -> subNavigator.navigateTo(CameraView.VIEW_NAME));
         bWeather.addClickListener(e -> subNavigator.navigateTo(WeatherView.VIEW_NAME));
     }
-
-
 
 
 }
