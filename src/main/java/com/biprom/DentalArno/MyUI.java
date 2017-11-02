@@ -28,7 +28,7 @@ import javax.servlet.annotation.WebServlet;
  */
 @Theme("mytheme")
 @SpringUI
-@Widgetset("com.biprom.DentalArno.DentalArno.MyAppWidgetset")
+@Widgetset("com.biprom.DentalArno.MyAppWidgetset")
 @ComponentScan("com.biprom.DentalArno")
 public class MyUI extends UI {
 
