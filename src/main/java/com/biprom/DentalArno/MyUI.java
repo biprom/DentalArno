@@ -1,5 +1,6 @@
 package com.biprom.DentalArno;
 
+import com.biprom.DentalArno.Data.Data;
 import com.biprom.DentalArno.View.MainView;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
@@ -40,6 +41,9 @@ public class MyUI extends UI {
 	@Autowired
 	SpringViewProvider viewProvider;
 
+	@Autowired
+	Data data;
+
 	@WebListener
 	public static class MyContextLoaderListener extends ContextLoaderListener {
 	}
@@ -55,7 +59,7 @@ public class MyUI extends UI {
 		navigator.addProvider(viewProvider);
 		navigator.navigateTo(MainView.VIEW_NAME);
 
-
+		SharedData sharedData = new SharedData(data);
 
 
 	}
@@ -67,3 +71,10 @@ public class MyUI extends UI {
 
 
 }
+
+	 class SharedData{
+			static Data data;
+			public SharedData(Data dt){
+				this.data = dt;
+			}
+		}

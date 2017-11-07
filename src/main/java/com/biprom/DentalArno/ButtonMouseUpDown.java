@@ -40,8 +40,8 @@ public class ButtonMouseUpDown extends AbstractComponent {
 
             }
             */
-
-            //System.out.println("mousedetails = " + );
+            SharedData.data.setBoolVBureau1(true);
+            System.out.println("mousedetails = " + SharedData.data.isBoolVBureau1());
 
         }
 
@@ -54,8 +54,8 @@ public class ButtonMouseUpDown extends AbstractComponent {
 
             }
             */
-
-            //System.out.println("mousedetails = " + sharedData.isBoolVBureau1());
+            SharedData.data.setBoolVBureau1(false);
+           System.out.println("mousedetails = " + SharedData.data.isBoolVBureau1());
 
         }
     };
