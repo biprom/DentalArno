@@ -1,4 +1,4 @@
-package com.biprom.DentalArno.widgets.client;
+package com.biprom.DentalArno.client;
 
 import com.vaadin.shared.AbstractComponentState;
 

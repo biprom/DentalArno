@@ -4,31 +4,38 @@
   <meta charset="UTF-8">
   <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
   <meta name="vaadin-version" content="7.7.7">
+  <meta name="package-mapping" content="com_biprom_dentalarno:com.biprom.DentalArno">
   <meta name="package-mapping" content="com_biprom_dentalarno_widgets:com.biprom.DentalArno.widgets">
  </head>
  <body>
   <vaadin-vertical-layout size-full>
-   <vaadin-grid-layout size-full :center>
-    <row expand="1">
+   <vaadin-grid-layout size-full _id="bureauGridLayout" :center>
+    <row>
      <column expand="1">
-      <vaadin-button style-name="primary" size-full plain-text _id="buttonBureau1" :center>
+      <vaadin-label style-name="colored h1" plain-text :middle :center>
         Bureau 1 
-      </vaadin-button>
+      </vaadin-label>
      </column>
      <column expand="1">
-      <vaadin-button style-name="primary" size-full plain-text _id="buttonBureau2" :center>
+      <vaadin-label style-name="colored h1" plain-text :middle :center>
         Bureau 2 
-      </vaadin-button>
+      </vaadin-label>
      </column>
      <column expand="1">
-      <vaadin-button style-name="primary" size-full plain-text _id="buttonBureauLed" :center>
+      <vaadin-label style-name="colored h1" plain-text :middle :center>
         Bureau LED 
-      </vaadin-button>
+      </vaadin-label>
      </column>
     </row>
     <row expand="1">
      <column>
-      <com_biprom_dentalarno_widgets-button-mouse-up-down size-full _id="testButton"></com_biprom_dentalarno_widgets-button-mouse-up-down>
+      <com_biprom_dentalarno-button-mouse-up-down primary-style-name="bureau1" size-full></com_biprom_dentalarno-button-mouse-up-down>
+     </column>
+     <column>
+      <com_biprom_dentalarno-button-mouse-up-down primary-style-name="bureau2" size-full></com_biprom_dentalarno-button-mouse-up-down>
+     </column>
+     <column>
+      <com_biprom_dentalarno-button-mouse-up-down primary-style-name="bureauLED" size-full></com_biprom_dentalarno-button-mouse-up-down>
      </column>
     </row>
    </vaadin-grid-layout>

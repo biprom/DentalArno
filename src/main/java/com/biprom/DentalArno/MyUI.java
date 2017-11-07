@@ -26,11 +26,15 @@ import javax.servlet.annotation.WebServlet;
  * The UI is initialized using {@link #init(VaadinRequest)}. This method is intended to be
  * overridden to add component to the user interface and initialize non-component functionality.
  */
-@Theme("mytheme")
+
 @SpringUI
-@Widgetset("com.biprom.DentalArno.MyAppWidgetset")
 @ComponentScan("com.biprom.DentalArno")
+@WebServlet(urlPatterns = "/*", name = "MyUIServlet", asyncSupported = true)
+@VaadinServletConfiguration(ui = MyUI.class, productionMode = false, widgetset = "com.biprom.DentalArno.WidgettestWidgetset")
+@Theme("mytheme")
+@Widgetset("com.biprom.DentalArno.WidgettestWidgetset")
 public class MyUI extends UI {
+
 
 
 	@Autowired
@@ -50,10 +54,14 @@ public class MyUI extends UI {
 		Navigator navigator = new Navigator(this, this);
 		navigator.addProvider(viewProvider);
 		navigator.navigateTo(MainView.VIEW_NAME);
+
+
+
+
 	}
 
-	@WebServlet(urlPatterns = "/*", name = "MyUIServlet", asyncSupported = true)
-	@VaadinServletConfiguration(ui = MyUI.class, productionMode = false)
+
+
 	public static class MyUIServlet extends VaadinServlet {
 	}
 

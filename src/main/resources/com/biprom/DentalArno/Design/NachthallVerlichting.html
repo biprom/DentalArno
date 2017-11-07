@@ -4,25 +4,37 @@
   <meta charset="UTF-8">
   <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
   <meta name="vaadin-version" content="7.7.7">
+  <meta name="package-mapping" content="com_biprom_dentalarno:com.biprom.DentalArno">
  </head>
  <body>
   <vaadin-vertical-layout size-full>
    <vaadin-grid-layout size-full :expand>
+    <row>
+     <column expand="1">
+      <vaadin-label style-name="colored h1" plain-text>
+        trap 
+      </vaadin-label>
+     </column>
+     <column expand="1">
+      <vaadin-label style-name="colored h1" plain-text>
+        nachthall vloer 
+      </vaadin-label>
+     </column>
+     <column expand="1">
+      <vaadin-label style-name="colored h1" plain-text>
+        nachthall 
+      </vaadin-label>
+     </column>
+    </row>
     <row expand="1">
-     <column expand="1">
-      <vaadin-button style-name="primary" size-full plain-text _id="buttonTrap" :center>
-        Trap 
-      </vaadin-button>
+     <column>
+      <com_biprom_dentalarno-button-mouse-up-down primary-style-name="trap" size-full></com_biprom_dentalarno-button-mouse-up-down>
      </column>
-     <column expand="1">
-      <vaadin-button style-name="primary" size-full plain-text _id="butttonNachthallVloer" :center>
-        Nachthall Vloer 
-      </vaadin-button>
+     <column>
+      <com_biprom_dentalarno-button-mouse-up-down primary-style-name="nachthallVloer" size-full></com_biprom_dentalarno-button-mouse-up-down>
      </column>
-     <column expand="1">
-      <vaadin-button style-name="primary" size-full plain-text _id="buttonNachthall" :center>
-        Nachthall 
-      </vaadin-button>
+     <column>
+      <com_biprom_dentalarno-button-mouse-up-down primary-style-name="nachthall" size-full></com_biprom_dentalarno-button-mouse-up-down>
      </column>
     </row>
    </vaadin-grid-layout>

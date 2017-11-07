@@ -4,32 +4,49 @@
   <meta charset="UTF-8">
   <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
   <meta name="vaadin-version" content="7.7.7">
+  <meta name="package-mapping" content="com_biprom_dentalarno:com.biprom.DentalArno">
  </head>
  <body>
   <vaadin-vertical-layout size-full>
    <vaadin-grid-layout size-full :expand>
-    <row expand="1">
+    <row>
      <column expand="1">
-      <vaadin-button style-name="primary" size-full plain-text _id="buttonVoordeur">
-        Voordeur 
-      </vaadin-button>
+      <vaadin-label caption="voordeur" style-name="colored h1" plain-text :middle :center>
+        voordeur 
+      </vaadin-label>
      </column>
      <column expand="1">
-      <vaadin-button style-name="primary" size-full plain-text _id="buttonInkom">
-        Inkom 
-      </vaadin-button>
+      <vaadin-label style-name="colored h1" plain-text :middle :center>
+        inkom 
+      </vaadin-label>
      </column>
     </row>
     <row expand="1">
      <column>
-      <vaadin-button style-name="primary" size-full plain-text _id="buttonInkomVloer">
-        Inkom Vloer 
-      </vaadin-button>
+      <com_biprom_dentalarno-button-mouse-up-down primary-style-name="voordeur" size-full></com_biprom_dentalarno-button-mouse-up-down>
      </column>
      <column>
-      <vaadin-button style-name="primary" size-full plain-text _id="buttonGarage" :center>
-        Garage 
-      </vaadin-button>
+      <com_biprom_dentalarno-button-mouse-up-down primary-style-name="inkom" size-full></com_biprom_dentalarno-button-mouse-up-down>
+     </column>
+    </row>
+    <row>
+     <column>
+      <vaadin-label style-name="colored h1" plain-text :middle :center>
+        inkom vloer 
+      </vaadin-label>
+     </column>
+     <column>
+      <vaadin-label style-name="colored h1" plain-text :middle :center>
+        garage 
+      </vaadin-label>
+     </column>
+    </row>
+    <row expand="1">
+     <column>
+      <com_biprom_dentalarno-button-mouse-up-down primary-style-name="inkomVloer" size-full></com_biprom_dentalarno-button-mouse-up-down>
+     </column>
+     <column>
+      <com_biprom_dentalarno-button-mouse-up-down primary-style-name="garage" size-full></com_biprom_dentalarno-button-mouse-up-down>
      </column>
     </row>
    </vaadin-grid-layout>

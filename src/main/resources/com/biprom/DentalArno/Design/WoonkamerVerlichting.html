@@ -4,25 +4,37 @@
   <meta charset="UTF-8">
   <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
   <meta name="vaadin-version" content="7.7.7">
+  <meta name="package-mapping" content="com_biprom_dentalarno:com.biprom.DentalArno">
  </head>
  <body>
   <vaadin-vertical-layout size-full>
    <vaadin-grid-layout size-full :center>
-    <row expand="1">
+    <row>
      <column expand="1">
-      <vaadin-button style-name="primary" size-full plain-text _id="buttonWoonkamer" :middle :center>
-        Woonkamer 
-      </vaadin-button>
+      <vaadin-label style-name="colored h1" plain-text>
+        woonkamer 
+      </vaadin-label>
      </column>
      <column expand="1">
-      <vaadin-button style-name="primary" size-full plain-text _id="buttonTv" :middle :center>
+      <vaadin-label style-name="colored h1" plain-text>
         TV 
-      </vaadin-button>
+      </vaadin-label>
      </column>
      <column expand="1">
-      <vaadin-button style-name="primary" size-full plain-text _id="buttonLeeshoek" :middle :center>
-        Leeshoek 
-      </vaadin-button>
+      <vaadin-label style-name="colored h1" plain-text>
+        leeshoek 
+      </vaadin-label>
+     </column>
+    </row>
+    <row expand="1">
+     <column>
+      <com_biprom_dentalarno-button-mouse-up-down primary-style-name="woonkamer" size-full></com_biprom_dentalarno-button-mouse-up-down>
+     </column>
+     <column>
+      <com_biprom_dentalarno-button-mouse-up-down primary-style-name="tv" size-full></com_biprom_dentalarno-button-mouse-up-down>
+     </column>
+     <column>
+      <com_biprom_dentalarno-button-mouse-up-down primary-style-name="leeshoek" size-full></com_biprom_dentalarno-button-mouse-up-down>
      </column>
     </row>
    </vaadin-grid-layout>

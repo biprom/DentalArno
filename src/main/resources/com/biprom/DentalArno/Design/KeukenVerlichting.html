@@ -5,36 +5,51 @@
   <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
   <meta name="vaadin-version" content="7.7.7">
   <meta name="package-mapping" content="com_biprom_dentalarno_view:com.biprom.DentalArno.View">
+  <meta name="package-mapping" content="com_biprom_dentalarno:com.biprom.DentalArno">
  </head>
  <body>
   <vaadin-vertical-layout size-full>
    <vaadin-grid-layout spacing size-full margin :center :expand>
-    <row expand="1">
+    <row>
      <column expand="1">
-      <vaadin-button style-name="primary" size-full plain-text _id="buttonKeuken1">
-        keuken 1 
-      </vaadin-button>
+      <vaadin-label style-name="colored h1" plain-text>
+        keuken1 
+      </vaadin-label>
      </column>
      <column expand="1">
-      <vaadin-button style-name="primary" size-full plain-text _id="buttonKeuken2" :middle :center>
-        keuken 2 
-      </vaadin-button>
+      <vaadin-label style-name="colored h1" plain-text>
+        keuken2 
+      </vaadin-label>
      </column>
     </row>
     <row expand="1">
      <column>
-      <vaadin-button style-name="primary" size-full plain-text _id="buttonEettafel" :middle :center>
+      <com_biprom_dentalarno-button-mouse-up-down size-full></com_biprom_dentalarno-button-mouse-up-down>
+     </column>
+     <column>
+      <com_biprom_dentalarno-button-mouse-up-down size-full></com_biprom_dentalarno-button-mouse-up-down>
+     </column>
+    </row>
+    <row>
+     <column>
+      <vaadin-label style-name="colored h1" plain-text>
         eettafel 
-      </vaadin-button>
+      </vaadin-label>
      </column>
      <column>
-      <vaadin-button style-name="primary" size-full plain-text _id="buttonSpotsKeuken" :middle :center>
-        spots keuken 
-      </vaadin-button>
+      <vaadin-label style-name="colored h1" plain-text>
+        spots Keuken 
+      </vaadin-label>
      </column>
     </row>
-    <row></row>
-    <row></row>
+    <row expand="1">
+     <column>
+      <com_biprom_dentalarno-button-mouse-up-down size-full></com_biprom_dentalarno-button-mouse-up-down>
+     </column>
+     <column>
+      <com_biprom_dentalarno-button-mouse-up-down size-full></com_biprom_dentalarno-button-mouse-up-down>
+     </column>
+    </row>
    </vaadin-grid-layout>
    <vaadin-browser-frame source="http://mail.vernafix.be:8103/control/userimage.html" size-full _id="cameraBrowser" :bottom :center :expand></vaadin-browser-frame>
   </vaadin-vertical-layout>

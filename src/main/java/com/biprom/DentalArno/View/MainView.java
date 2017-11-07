@@ -40,12 +40,13 @@ public class MainView extends MainDesign implements View {
 		subNavigator.addView(WeatherView.VIEW_NAME, viewProvider.getView(WeatherView.VIEW_NAME));
 		subNavigator.addView(CameraView.VIEW_NAME, viewProvider.getView(CameraView.VIEW_NAME));
 		subNavigator.addView(LightView.VIEW_NAME, viewProvider.getView(LightView.VIEW_NAME));
+		subNavigator.addView(ScreenView.VIEW_NAME, viewProvider.getView(ScreenView.VIEW_NAME));
 
 
 		subNavigator.navigateTo(LightView.VIEW_NAME);
 
 		bVerlichting.addClickListener(e -> subNavigator.navigateTo(LightView.VIEW_NAME));
-		//bScreens.addClickListener(e > subNavigator.navigateTo(ScreensView.VIEW_NAME));
+		bScreens.addClickListener(e -> subNavigator.navigateTo(ScreenView.VIEW_NAME));
 		bVideofoon.addClickListener(e -> subNavigator.navigateTo(CameraView.VIEW_NAME));
 		bWeather.addClickListener(e -> subNavigator.navigateTo(WeatherView.VIEW_NAME));
 

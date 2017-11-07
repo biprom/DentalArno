@@ -1,6 +1,6 @@
-package com.biprom.DentalArno.widgets.client;
+package com.biprom.DentalArno.client;
 
-import com.biprom.DentalArno.widgets.ButtonMouseUpDown;
+import com.biprom.DentalArno.ButtonMouseUpDown;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.*;
 import com.google.gwt.user.client.Window;
@@ -12,15 +12,16 @@ import com.vaadin.client.ui.AbstractComponentConnector;
 import com.vaadin.shared.MouseEventDetails;
 import com.vaadin.shared.ui.Connect;
 
-@Connect(com.biprom.DentalArno.widgets.ButtonMouseUpDown.class)
+
+@Connect(com.biprom.DentalArno.ButtonMouseUpDown.class)
 public class ButtonMouseUpDownConnector extends AbstractComponentConnector {
     private final ButtonMouseUpDownServerRpc serverRpc = RpcProxy.create(ButtonMouseUpDownServerRpc.class, this);
 
     public ButtonMouseUpDownConnector() {
         registerRpc(ButtonMouseUpDownClientRpc.class, new ButtonMouseUpDownClientRpc() {
-            public void alert(String message) {
+            public void alert() {
                 // TODO Do something useful
-                Window.alert(message);
+                Window.alert("");
             }
         });
 
@@ -42,7 +43,9 @@ public class ButtonMouseUpDownConnector extends AbstractComponentConnector {
                 final MouseEventDetails mouseDetails = MouseEventDetailsBuilder
                         .buildMouseEventDetails(event.getNativeEvent(),
                                 getWidget().getElement());
-                serverRpc.mouseDown(mouseDetails);
+
+
+                serverRpc.mouseDown(getWidget().getStylePrimaryName()+"DOWN");
             }
         });
 
@@ -53,7 +56,7 @@ public class ButtonMouseUpDownConnector extends AbstractComponentConnector {
                 final MouseEventDetails mouseDetails = MouseEventDetailsBuilder
                         .buildMouseEventDetails(event.getNativeEvent(),
                                 getWidget().getElement());
-                serverRpc.mouseUp(mouseDetails);
+                serverRpc.mouseUp(getWidget().getStylePrimaryName()+"UP");
             }
         });
     }

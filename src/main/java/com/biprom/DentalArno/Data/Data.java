@@ -1,5 +1,6 @@
 package com.biprom.DentalArno.Data;
 
+import com.vaadin.spring.annotation.SpringComponent;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 

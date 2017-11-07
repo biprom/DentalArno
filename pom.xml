@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>DentalArno</groupId>
+    <groupId>com.biprom</groupId>
     <artifactId>DentalArno</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>com.biprom.DentalArno.DentalArno</name>
+    <name>DentalArno</name>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -16,9 +16,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+
+
     <properties>
-        <vaadin.version>7.6.4</vaadin.version>
-        <vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
+        <vaadin.version>7.7.11</vaadin.version>
+        <vaadin.plugin.version>7.7.11</vaadin.plugin.version>
         <jetty.plugin.version>9.2.3.v20140905</jetty.plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -58,11 +60,25 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.pi4j</groupId>
+            <artifactId>pi4j-core</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pi4j</groupId>
+            <artifactId>pi4j-gpio-extension</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pi4j</groupId>
+            <artifactId>pi4j-gpio-extension</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-spring-boot-starter</artifactId>
             <version>1.2.0</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -108,20 +124,18 @@
             <artifactId>vaadin-client</artifactId>
             <scope>provided</scope>
         </dependency>
-        <!--
-          Needed when using the widgetset optimizer (custom ConnectorBundleLoaderFactory).
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-client-compiled</artifactId>
+        </dependency>
 
-          For widgetset compilation, vaadin-client-compiler is automatically added on the
-          compilation classpath by vaadin-maven-plugin so normally there is no need for an
-          explicit dependency.
-        -->
-        <!--
+
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-client-compiler</artifactId>
             <scope>provided</scope>
         </dependency>
-        -->
+
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-themes</artifactId>
