@@ -45,7 +45,7 @@ public class ButtonMouseUpDownConnector extends AbstractComponentConnector {
                                 getWidget().getElement());
 
 
-                serverRpc.mouseDown(getWidget().getStylePrimaryName()+"DOWN");
+                serverRpc.mouseDown(getWidget().getStylePrimaryName());
             }
         });
 
@@ -56,7 +56,7 @@ public class ButtonMouseUpDownConnector extends AbstractComponentConnector {
                 final MouseEventDetails mouseDetails = MouseEventDetailsBuilder
                         .buildMouseEventDetails(event.getNativeEvent(),
                                 getWidget().getElement());
-                serverRpc.mouseUp(getWidget().getStylePrimaryName()+"UP");
+                serverRpc.mouseUp(getWidget().getStylePrimaryName());
             }
         });
     }

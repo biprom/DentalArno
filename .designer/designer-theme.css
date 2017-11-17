@@ -1557,6 +1557,144 @@ div.v-layout.v-horizontal.v-widget {
 	vertical-align: top;
 }
 
+.root-layout.navigation-template-dark {
+	background-color: #000;
+}
+
+.root-layout.navigation-template-dark .header-bar .v-nativebutton, .root-layout.navigation-template-dark .side-bar .v-nativebutton {
+	background: none;
+	border: none;
+}
+
+.root-layout.navigation-template-dark .header-bar .v-nativebutton:hover, .root-layout.navigation-template-dark .side-bar .v-nativebutton:hover {
+	cursor: pointer;
+}
+
+.root-layout.navigation-template-dark .scroll-panel {
+	background-color: #000;
+	border: none;
+	border-radius: 0;
+}
+
+.root-layout.navigation-template-dark .header-bar {
+	background-color: #323C3C;
+	padding: 0px 15px 0 15px;
+	vertical-align: middle;
+	height: 65px;
+}
+
+.root-layout.navigation-template-dark .header-bar  > * {
+	color: #C8D2D2;
+	float: right;
+	padding: 0;
+	line-height: 20px;
+	margin-left: 15px;
+	font-size: 16px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;/** Vertically center everything **/
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.root-layout.navigation-template-dark .header-bar  > .search-field {
+	background: none;
+	color: #959595;
+	padding-left: 5px;
+	box-shadow: none;
+	border: 0;
+	border-bottom: solid 2px #586262;
+	border-radius: 0;
+	font-style: italic;
+}
+
+.root-layout.navigation-template-dark .header-bar .user-name-label {
+	color: #fff;
+}
+
+.root-layout.navigation-template-dark .side-bar {
+	background-color: #323C3C;
+	width: 100px;
+}
+
+.root-layout.navigation-template-dark .side-bar  > .menu-button {
+	position: relative;
+	color: #C8D2D2;
+	height: 90px;
+}
+
+.root-layout.navigation-template-dark .side-bar  > .menu-button.selected {
+	background-color: #000;
+}
+
+.root-layout.navigation-template-dark .side-bar  > .menu-button.selected .v-nativebutton-caption {
+	color: #C8D2D2;
+}
+
+.root-layout.navigation-template-dark .side-bar  > .menu-button .v-nativebutton-caption {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 8px;
+	text-align: center;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.root-layout.navigation-template-dark .side-bar  > .menu-button .v-icon {
+	color: #C8D2D2;
+	position: absolute;
+	font-size: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	top: 10px;
+	left: 0;
+	right: 0;
+}
+
+.root-layout.navigation-template-dark .dashboard-layout {
+	padding: 60px 60px 0 60px;
+}
+
+.root-layout.navigation-template-dark[width-range~="321px-768px"] .dashboard-layout {
+	padding: 10px;
+}
+
+.root-layout.navigation-template-dark[width-range~="321px-768px"] .dashboard-item {
+	width: 100% !important;
+	min-width: 321px;
+	margin: 0;
+}
+
+.root-layout.navigation-template-dark[width-range~="321px-768px"] .side-bar {
+	width: 60px;
+}
+
+.root-layout.navigation-template-dark[width-range~="321px-768px"] .side-bar  > .menu-button {
+	height: 50px;
+}
+
+.root-layout.navigation-template-dark[width-range~="321px-768px"] .side-bar  > .menu-button  > .v-nativebutton-caption {
+	visibility: hidden;
+}
+
+.root-layout.navigation-template-dark[width-range~="321px-768px"] .side-bar  > .menu-button  > .v-icon {
+	top: 0;
+}
+
+.root-layout.navigation-template-dark[width-range~="321px-768px"] .header-bar {
+	height: 45px;
+	padding: 2px;
+}
+
+.navigation-template-dark[width-range~="321px-768px"] {
+	visibility: visible;
+}
+
 .mytheme .app-shell .custom-menubar .v-menubar-menuitem {
 	position: relative;
 }

@@ -30,7 +30,61 @@ public class Data {
 	boolean boolVTuin1 = false;							//uitgang 33
 	boolean boolVTuin2 = false;							//uitgang 34
 	boolean boolVTuin3 = false;							//uitgang 35
+	boolean screensLiving = false;						//
+	boolean screensKeuken = false;
+	boolean screensMastSlpk = false;
+	boolean screensSlpkDochter = false;
+	boolean screensSlpkZoon = false;
 
+	public boolean isScreensLiving() {
+		return screensLiving;
+	}
+
+	public void setScreensLiving(boolean screensLiving) {
+		this.screensLiving = screensLiving;
+	}
+
+	public boolean isScreensKeuken() {
+		return screensKeuken;
+	}
+
+	public void setScreensKeuken(boolean screensKeuken) {
+		this.screensKeuken = screensKeuken;
+	}
+
+	public boolean isScreensMastSlpk() {
+		return screensMastSlpk;
+	}
+
+	public void setScreensMastSlpk(boolean screensMastSlpk) {
+		this.screensMastSlpk = screensMastSlpk;
+	}
+
+	public boolean isScreensSlpkDochter() {
+		return screensSlpkDochter;
+	}
+
+	public void setScreensSlpkDochter(boolean screensSlpkDochter) {
+		this.screensSlpkDochter = screensSlpkDochter;
+	}
+
+	public boolean isScreensSlpkZoon() {
+		return screensSlpkZoon;
+	}
+
+	public void setScreensSlpkZoon(boolean screensSlpkZoon) {
+		this.screensSlpkZoon = screensSlpkZoon;
+	}
+
+	public boolean isScreensMastBadk() {
+		return screensMastBadk;
+	}
+
+	public void setScreensMastBadk(boolean screensMastBadk) {
+		this.screensMastBadk = screensMastBadk;
+	}
+
+	boolean screensMastBadk = false;
 
 	public boolean isBoolVoordeurBuiten() {
 		return boolVoordeurBuiten;

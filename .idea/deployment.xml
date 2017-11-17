@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="FTPDentalArno" />
+  <component name="PublishConfigData" serverName="FTPDentalArno">
+    <serverData>
+      <paths name="FTPDentalArno">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/pi" local="$PROJECT_DIR$/target" web="/home/pi" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
 </project>

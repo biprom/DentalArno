@@ -32,7 +32,7 @@ import javax.servlet.annotation.WebServlet;
 @ComponentScan("com.biprom.DentalArno")
 @WebServlet(urlPatterns = "/*", name = "MyUIServlet", asyncSupported = true)
 @VaadinServletConfiguration(ui = MyUI.class, productionMode = false, widgetset = "com.biprom.DentalArno.WidgettestWidgetset")
-@Theme("mytheme")
+//@Theme("mytheme")
 @Widgetset("com.biprom.DentalArno.WidgettestWidgetset")
 public class MyUI extends UI {
 

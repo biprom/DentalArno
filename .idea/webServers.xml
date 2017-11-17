@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="3b2bd781-23eb-485d-992f-e878d3bd188f" name="FTPDentalArno" url="http://192.168.0.243">
-        <fileTransfer host="192.168.0.243" port="21">
+        <fileTransfer host="192.168.0.243" port="21" rootFolder="/home/pi">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
