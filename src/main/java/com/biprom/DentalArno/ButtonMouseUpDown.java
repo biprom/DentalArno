@@ -35,30 +35,52 @@ public class ButtonMouseUpDown extends AbstractComponent {
 
             switch (msg){
                 case "bureau1":  SharedData.data.setBoolVBureau1( true);
-                case "bureau2":  SharedData.data.setBoolVBureau2( true);
-                case "bureauLED":  SharedData.data.setBoolVLedBureau( true);
-                case "voordeur":  SharedData.data.setBoolVoordeurBuiten( true);
-                case "inkom":  SharedData.data.setBoolVInkomPlafond( true);
-                case "inkomVloer":  SharedData.data.setBoolVInkomVloer( true);
-                case "garage":  SharedData.data.setBoolVGarage( true);
-                case "keuken1":  SharedData.data.setBoolVKeuken( true);
-                case "keuken2":  SharedData.data.setBoolVKeuken2( true);
-                case "eettafel":  SharedData.data.setBoolVEettafel( true);
-                case "spotskeuken":  SharedData.data.setBoolVLedKeuken( true);
-                case "trap":  SharedData.data.setBoolVTrapverlichting( true);
-                case "nachthallVloer":  SharedData.data.setBoolVNachthall( true);
-                case "nachthall":  SharedData.data.setBoolVNachthallboven( true);
-                case "woonkamer":  SharedData.data.setBoolVLeeshoek( true);
-                case "tv":  SharedData.data.setBoolVLivingTV1( true);
-                case "screensLiving":  SharedData.data.setScreensLiving( true);
-                case "screensKeuken":  SharedData.data.setScreensKeuken( true);
-                case "screensMastSlpk":  SharedData.data.setScreensMastSlpk( true);
-                case "screensSlpkDochter":  SharedData.data.setScreensSlpkDochter( true);
-                case "screensSlpkZoon":  SharedData.data.setScreensSlpkZoon( true);
-                case "screensMastBadk":  SharedData.data.setScreensMastBadk( true);
-
-
                     break;
+                case "bureau2":  SharedData.data.setBoolVBureau2( true);
+                    break;
+                case "bureauLED":  SharedData.data.setBoolVLedBureau( true);
+                    break;
+                case "voordeur":  SharedData.data.setBoolVoordeurBuiten( true);
+                    break;
+                case "inkom":  SharedData.data.setBoolVInkomPlafond( true);
+                    break;
+                case "inkomVloer":  SharedData.data.setBoolVInkomVloer( true);
+                    break;
+                case "garage":  SharedData.data.setBoolVGarage( true);
+                    break;
+                case "keuken1":  SharedData.data.setBoolVKeuken( true);
+                    break;
+                case "keuken2":  SharedData.data.setBoolVKeuken2( true);
+                    break;
+                case "eettafel":  SharedData.data.setBoolVEettafel( true);
+                    break;
+                case "spotskeuken":  SharedData.data.setBoolVLedKeuken( true);
+                    break;
+                case "trap":  SharedData.data.setBoolVTrapverlichting( true);
+                    break;
+                case "nachthallVloer":  SharedData.data.setBoolVNachthall( true);
+                    break;
+                case "nachthall":  SharedData.data.setBoolVNachthallboven( true);
+                    break;
+                case "woonkamer":  SharedData.data.setBoolVLeeshoek( true);
+                    break;
+                case "tv":  SharedData.data.setBoolVLivingTV1( true);
+                    break;
+                case "screensLiving":  SharedData.data.setScreensLiving( true);
+                    break;
+                case "screensKeuken":  SharedData.data.setScreensKeuken( true);
+                    break;
+                case "screensMastSlpk":  SharedData.data.setScreensMastSlpk( true);
+                    break;
+                case "screensSlpkDochter":  SharedData.data.setScreensSlpkDochter( true);
+                    break;
+                case "screensSlpkZoon":  SharedData.data.setScreensSlpkZoon( true);
+                    break;
+                case "screensMastBadk":  SharedData.data.setScreensMastBadk( true);
+                    break;
+
+
+
 
             }
 
@@ -72,26 +94,47 @@ public class ButtonMouseUpDown extends AbstractComponent {
 
             switch (msg){
                 case "bureau1":  SharedData.data.setBoolVBureau1( false);
+                    break;
                 case "bureau2":  SharedData.data.setBoolVBureau2( false);
+                    break;
                 case "bureauLED":  SharedData.data.setBoolVLedBureau( false);
+                    break;
                 case "voordeur":  SharedData.data.setBoolVoordeurBuiten( false);
+                    break;
                 case "inkom":  SharedData.data.setBoolVInkomPlafond( false);
+                    break;
                 case "inkomVloer":  SharedData.data.setBoolVInkomVloer( false);
+                    break;
                 case "garage":  SharedData.data.setBoolVGarage( false);
+                    break;
                 case "keuken1":  SharedData.data.setBoolVKeuken( false);
+                    break;
                 case "keuken2":  SharedData.data.setBoolVKeuken2( false);
+                    break;
                 case "eettafel":  SharedData.data.setBoolVEettafel( false);
+                    break;
                 case "spotskeuken":  SharedData.data.setBoolVLedKeuken( false);
+                    break;
                 case "trap":  SharedData.data.setBoolVTrapverlichting( false);
+                    break;
                 case "nachthallVloer":  SharedData.data.setBoolVNachthall( false);
+                    break;
                 case "nachthall":  SharedData.data.setBoolVNachthallboven( false);
+                    break;
                 case "woonkamer":  SharedData.data.setBoolVLeeshoek( false);
+                    break;
                 case "tv":  SharedData.data.setBoolVLivingTV1( false);
+                    break;
                 case "screensLiving":  SharedData.data.setScreensLiving( false);
+                    break;
                 case "screensKeuken":  SharedData.data.setScreensKeuken( false);
+                    break;
                 case "screensMastSlpk":  SharedData.data.setScreensMastSlpk( false);
+                    break;
                 case "screensSlpkDochter":  SharedData.data.setScreensSlpkDochter( false);
+                    break;
                 case "screensSlpkZoon":  SharedData.data.setScreensSlpkZoon( false);
+                    break;
                 case "screensMastBadk":  SharedData.data.setScreensMastBadk( false);
                     break;
 

@@ -30,10 +30,10 @@ public class DentalWorkCycle extends Thread {
 
 //    Initialisatie digitale outputs
     DigOutput_PCF digital_output_card_1 = new DigOutput_PCF(1, 0X21);
-    DigOutput_PCF digital_output_card_2 = new DigOutput_PCF(1, 0X23);
-    DigOutput_PCF digital_output_card_3 = new DigOutput_PCF(1, 0X27);
-    DigOutput_PCF digital_output_card_4 = new DigOutput_PCF(1, 0X3a);
-	DigOutput_PCF digital_output_card_5 = new DigOutput_PCF(1, 0X3c);
+    DigOutput_PCF digital_output_card_2 = new DigOutput_PCF(1, 0X3a);
+    DigOutput_PCF digital_output_card_3 = new DigOutput_PCF(1, 0X23);
+    DigOutput_PCF digital_output_card_4 = new DigOutput_PCF(1, 0X3c);
+	DigOutput_PCF digital_output_card_5 = new DigOutput_PCF(1, 0X27);
 
 
 	private void setOutputsToVariables() {
